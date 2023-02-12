@@ -1,4 +1,6 @@
 <script setup>
+import HelloWorld from '../components/HelloWorld.vue'
+
 const handleClickMini = () => {
   AMessage.info('hello Oceanknight, click mini AButton!')
 };
@@ -11,5 +13,7 @@ const handleClickMini = () => {
     <a-button type="primary">Medium</a-button>
     <a-button type="primary" size="large">Large</a-button>
   </a-space>
+
+  <HelloWorld />
 </template>
 <style scoped lang="scss"></style>
