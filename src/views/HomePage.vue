@@ -15,5 +15,6 @@ const handleClickMini = () => {
   </a-space>
 
   <HelloWorld />
+  <icon-mingcute-badge-line class="" />
 </template>
 <style scoped lang="scss"></style>
