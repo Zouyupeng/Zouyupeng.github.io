@@ -4,11 +4,9 @@
   "private": true,
   "homepage": "https://Zouyupeng.github.io/",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "preview": "vite preview",
+    "serve": "vite --mode development",
+    "build": "vite build --mode production",
+    "preview": "vite preview --port 8081",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
