@@ -13,20 +13,19 @@ import {
 } from 'unplugin-vue-components/resolvers'
 
 // icon 插件
-import Icons from "unplugin-icons/vite"
+import Icons from 'unplugin-icons/vite'
 // icon 自动引入解析器
-import IconsResolver from "unplugin-icons/resolver"
+import IconsResolver from 'unplugin-icons/resolver'
 // icon 加载 loader
-import { FileSystemIconLoader } from "unplugin-icons/loaders"
-
+import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-       // 需要去解析的文件
-       include: [
+      // 需要去解析的文件
+      include: [
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
         /\.vue$/,
         /\.vue\?vue/, // .vue
@@ -58,26 +57,26 @@ export default defineConfig({
         VueUseDirectiveResolver(),
         IconsResolver({
           // icon自动引入的组件前缀 - 为了统一组件icon组件名称格式
-          prefix: "icon",
+          prefix: 'icon',
           // 自定义的icon模块集合
-          customCollections: ["user", "home"],
+          customCollections: ['user', 'home']
         })
       ]
     }),
     // Icon 插件配置
     Icons({
-      compiler: "vue3",
+      compiler: 'vue3',
       customCollections: {
         // user图标集，给svg文件设置 fill="currentColor" 属性，使图标的颜色具有适应性
-        user: FileSystemIconLoader("src/assets/svg/user", (svg) =>
+        user: FileSystemIconLoader('src/assets/svg/user', svg =>
           svg.replace(/^<svg /, '<svg fill="currentColor" ')
         ),
         // home 模块图标集
-        home: FileSystemIconLoader("src/assets/svg/home", (svg) =>
+        home: FileSystemIconLoader('src/assets/svg/home', svg =>
           svg.replace(/^<svg /, '<svg fill="currentColor" ')
-        ),
+        )
       },
-      autoInstall: true,
+      autoInstall: true
     })
   ],
   resolve: {
