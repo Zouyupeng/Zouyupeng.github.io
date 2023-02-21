@@ -36,6 +36,9 @@ const handleClickMini = () => {
   </button>
 
   <button class="btn-style">Button</button>
+
+  <div></div>
+  <plusOneButton />
 </template>
 <style>
 .btn-style {
