@@ -5,8 +5,19 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'HomePage',
-      component: () => import('@/views/HomePage.vue')
+      name: 'Layout',
+      component: () => import('@/layout/SwitchIndex.vue'),
+      redirect: '/',
+      children: [
+        {
+          path: '/',
+          name: 'HomePage',
+          meta: {
+            title: 'TOOLSDOG'
+          },
+          component: () => import('@/views/HomePage.vue')
+        }
+      ]
     }
   ]
 })
