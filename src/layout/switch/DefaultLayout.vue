@@ -5,7 +5,13 @@
     <div class="default-layout">
       <a-layout class="min-h-[calc(100vh+48px)]">
         <a-affix>
-          <a-layout-header> Navbar </a-layout-header>
+          <a-layout-header>
+            <Nav-bar>
+              <template #left>
+                <Logo />
+              </template>
+            </Nav-bar>
+          </a-layout-header>
         </a-affix>
         <a-layout-content>
           <router-view v-slot="{ Component }">

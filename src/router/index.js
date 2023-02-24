@@ -13,7 +13,7 @@ const router = createRouter({
           path: '/',
           name: 'HomePage',
           meta: {
-            title: 'TOOLSDOG'
+            title: 'Oceanknight'
           },
           component: () => import('@/views/HomePage.vue')
         }
