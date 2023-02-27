@@ -1,6 +1,6 @@
 <script setup>
 import { getConfig } from '@/config/config.js'
-const openNewWindow = () => window.open(getConfig('github'), '_blank')
+const openNewWindow = () => window.open(getConfig('me.projectGitHub'), '_blank')
 </script>
 <template>
   <a-button type="text" @click="openNewWindow">

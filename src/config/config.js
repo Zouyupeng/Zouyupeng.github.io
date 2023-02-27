@@ -2,7 +2,7 @@
  * @Author: Oceanknight
  * @Date: 2023-02-27 09:16:23
  * @Last Modified by: Oceanknight
- * @Last Modified time: 2023-02-27 09:40:28
+ * @Last Modified time: 2023-02-27 13:22:39
  */
 
 /*
@@ -34,8 +34,13 @@ const configSource = {
   mockBaseUrl: ENV.VITE_BASE_MOCK_URL,
   // 服务端接口路径
   serverUrl: ENV.VITE_BASE_SERVER_URL,
-  // Github 仓库连接
-  github: 'https://github.com/Zouyupeng/Zouyupeng.github.io'
+  // 个人配置
+  me: {
+    name: 'Oceanknight',
+    projectGitHub: 'https://github.com/Zouyupeng/Zouyupeng.github.io',
+    // github
+    github: 'https://github.com/Zouyupeng'
+  }
 }
 
 /**
