@@ -1,9 +1,8 @@
 /*
- * @LastEditors: isboyjc
- * @Description: 全局config配置文件
- * @Date: 2022-09-17 14:35:02
- * @LastEditTime: 2022-09-17 14:35:02
- * @Author: isboyjc
+ * @Author: Oceanknight
+ * @Date: 2023-02-27 09:16:23
+ * @Last Modified by: Oceanknight
+ * @Last Modified time: 2023-02-27 09:40:28
  */
 
 /*
@@ -34,7 +33,9 @@ const configSource = {
   // 模拟数据接口路径
   mockBaseUrl: ENV.VITE_BASE_MOCK_URL,
   // 服务端接口路径
-  serverUrl: ENV.VITE_BASE_SERVER_URL
+  serverUrl: ENV.VITE_BASE_SERVER_URL,
+  // Github 仓库连接
+  github: 'https://github.com/Zouyupeng/Zouyupeng.github.io'
 }
 
 /**

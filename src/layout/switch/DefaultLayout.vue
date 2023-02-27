@@ -8,7 +8,10 @@
           <a-layout-header>
             <Nav-bar>
               <template #left>
-                <Logo />
+                <LogoTitle />
+              </template>
+              <template #right>
+                <LogoGithub />
               </template>
             </Nav-bar>
           </a-layout-header>
