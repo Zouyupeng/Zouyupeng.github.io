@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
+// 导入菜单路由
+import { menuRouter } from './menuRouter'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,7 +18,8 @@ const router = createRouter({
             title: 'Oceanknight'
           },
           component: () => import('@/views/HomePage.vue')
-        }
+        },
+        ...menuRouter
       ]
     }
   ]

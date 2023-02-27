@@ -13,6 +13,9 @@
               <template #right>
                 <LogoGithub />
               </template>
+              <template #center>
+                <Menu />
+              </template>
             </Nav-bar>
           </a-layout-header>
         </a-affix>
