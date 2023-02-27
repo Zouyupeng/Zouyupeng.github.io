@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Setup Node
-        uses: npm install
+        run: npm install
         with:
           node-version: 18
 
