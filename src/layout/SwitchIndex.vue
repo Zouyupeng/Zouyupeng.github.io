@@ -1,12 +1,10 @@
-<script setup>
-import DefaultLayout from './switch/DefaultLayout.vue';
-
-</script>
+<script setup></script>
 
 <template>
   <div class="switch-index">
     <!-- <component :is="" /> -->
-    <DefaultLayout />
+    <!-- <DefaultLayout /> -->
+    <SidebarLayout />
   </div>
 </template>
 
