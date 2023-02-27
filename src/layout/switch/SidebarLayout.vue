@@ -1,3 +1,12 @@
+<script>
+import IconRiLayout5Fill from '~icons/ri/layout-5-fill'
+export default {
+  name: 'SidebarLayout',
+  icon: IconRiLayout5Fill,
+  title: '边栏布局'
+}
+</script>
+
 <script setup>
 // 侧边栏收缩状态
 const collapsed = ref(false)
@@ -18,7 +27,7 @@ const handleCollapse = (val, type) => {
           <NavBar>
             <template #left> <LogoTitle /> </template>
 
-            <template #right> <LogoGithub /> </template>
+            <template #right> <SwitchLayout /> <LogoGithub /> </template>
           </NavBar>
         </a-layout-header>
       </a-affix>
